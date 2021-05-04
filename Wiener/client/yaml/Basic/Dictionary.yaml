@@ -1,0 +1,27 @@
+Header:
+  Excel: Basic/Basic.xlsm
+  Sheet: 辞書
+  Row: 5
+  BaseType: Normal
+  SourceType: Normal
+  ContainerType: Dictionary
+  OutputPath: Basic
+  Name: BasicDictionary
+
+Fields:
+- Column: Id
+  Name: id
+  Type: Int
+
+- Column: Name
+  Name: name
+  Type: String
+  Localize: True
+
+- Column: GroupId
+  Name: group_id
+  Type: Foreignkey
+  Relation:
+    Yaml: Basic/Groupby.yaml
+    From: Id
+    To: Id

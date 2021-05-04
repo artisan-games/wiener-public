@@ -1,0 +1,77 @@
+Header:
+  Excel: Extra/Validate.xlsm
+  Sheet: 検証
+  Row: 5
+  BaseType: Normal
+  SourceType: Normal
+  ContainerType: List
+  OutputPath: Sample
+  Name: SampleValidate
+
+# 複数の項目の同一検証エラー(ここではIntValueとLongValueの組み合わせ)
+  Validate:
+    CompositeUnique:
+      - Keys:
+        - Key: IntValue
+        - Key: LongValue
+
+Fields:
+# 同一Idで検証エラー
+- Column: Id
+  Name: id
+  Type: Int
+  Validate:
+    Unique: true
+
+- Column: ExistsValue
+  Name: exists_value
+  Type: Int
+  Validate:
+    ColumnExistsYaml: Extra/MultiYamlValidateColumnExistsYaml.yaml
+
+# Enumの定義項目が足りないと検証エラー
+- Column: EnumValue
+  Name: enum_value
+  Type: Foreignkey
+  Relation:
+    Yaml: Enum/GenderType.yaml
+    From: From
+    To: To
+  Validate:
+    EnumExists:
+      Yaml: Enum/GenderType.yaml
+      Column: To
+
+# minより小さい値があったら検証エラー
+- Column: IntValue
+  Name: int_value
+  Type: Int
+  Validate:
+    Range:
+      Min: -200
+
+# maxより大きい値があったら検証エラー
+- Column: LongValue
+  Name: long_value
+  Type: Long
+  Validate:
+    Range:
+      Max: 46146187679
+
+# minより小さいまたは、maxより大きい値があったら検証エラー
+- Column: FloatValue
+  Name: float_value
+  Type: Float
+  Validate:
+    Range:
+      Min: -20.35
+      Max: 10.5
+
+# 文字の1列の文字位数がline_lengthより大きいか、line_valueより行数が多いと検証エラー
+- Column: StringValue
+  Name: string_value
+  Type: String
+  Validate:
+    StringLength:
+      LineLength: 20
+      LineValue: 4

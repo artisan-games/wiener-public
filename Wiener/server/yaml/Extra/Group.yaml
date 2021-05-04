@@ -1,0 +1,19 @@
+Header:
+  Excel: Extra/Group/*.xlsm
+  Sheet: グループ
+  Row: 5
+  BaseType: Normal
+  SourceType: Normal
+  ContainerType: List
+  OutputPath: Group
+  Name: Group
+  Group: Group
+
+Fields:
+- Column: id
+  Name: id
+  Type: Int
+
+- Column: string_value
+  Name: string_value
+  Type: String

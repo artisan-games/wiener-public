@@ -1,0 +1,7 @@
+﻿excel[Group2],sheet[グループ]
+Id,StringValue
+1,正常な動作では
+2,Group1と
+3,Group2が
+4,個別読み込み
+5,出来るようになります

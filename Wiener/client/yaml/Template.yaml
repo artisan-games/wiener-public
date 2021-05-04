@@ -1,0 +1,82 @@
+﻿Header:
+  Excel: Template.xlsm
+  Sheet: template
+  Row: 5
+  ContainerType: Dictionary
+  OutputPath: Template
+  Name: Template
+
+Fields:
+- Column: Id
+  Name: id
+  Type: Int
+
+- Column: BoolValue
+  Name: bool_value
+  Type: Foreignkey
+  Relation:
+    Yaml: Enum/Bool.yaml
+    From: From
+    To: To
+
+- Column: ByteValue
+  Name: byte_value
+  Type: Byte
+  Default: 0
+
+- Column: ShortValue
+  Name: short_value
+  Type: Short
+  Default: 0
+
+- Column: UShortValue
+  Name: ushort_value
+  Type: UShort
+  Default: 0
+
+- Column: IntValue
+  Name: int_value
+  Type: Int
+  Default: 0
+
+- Column: UIntValue
+  Name: uint_value
+  Type: UInt
+  Default: 0
+
+- Column: LongValue
+  Name: long_value
+  Type: Long
+  Default: 0
+
+- Column: ULongValue
+  Name: ulong_value
+  Type: ULong
+  Default: 0
+
+- Column: FloatValue
+  Name: float_value
+  Type: Float
+  Default: 0
+
+- Column: DoubleValue
+  Name: double_value
+  Type: Double
+  Default: 0
+
+- Column: StringValue
+  Name: string_value
+  Type: String
+
+- Column: DatetimeValue
+  Name: datetime_value
+  Type: DateTime
+  Default: ""
+
+- Column: EnumValue
+  Name: enum_value
+  Type: Foreignkey
+  Relation:
+    Yaml: Enum/GenderType.yaml
+    From: From
+    To: To

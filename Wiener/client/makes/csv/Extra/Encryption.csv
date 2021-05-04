@@ -1,0 +1,4 @@
+﻿excel[Extra/Encryption.xlsm],sheet[暗号化]
+ByteEncryption,ShortEncryption,UShortEncryption,IntEncryption,UIntEncryption,LongEncryption,ULongEncryption,FloatEncryption,DoubleEncryption
+100,200,5000,200,5000,64166,186876,0.3,1.666666
+127,-300,600,-4000,1268736,-51868768761,8465887615,-12.5,-686776876.0005

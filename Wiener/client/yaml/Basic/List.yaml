@@ -1,0 +1,23 @@
+Header:
+  Excel: Basic/Basic.xlsm
+  Sheet: リスト
+  Row: 5
+  BaseType: Normal
+  SourceType: Normal
+  ContainerType: List
+  OutputPath: Basic
+  Name: BasicList
+
+Fields:
+- Column: Id
+  Name: id
+  Type: Int
+
+- Column: IntValue
+  Name: int_value
+  Type: Int
+
+- Column: Detail
+  Name: detail
+  Type: String
+  Localize: True

@@ -1,0 +1,18 @@
+Header:
+  Excel: Extra/Test/*.xlsm
+  Sheet: テスト
+  Row: 5
+  BaseType: Normal
+  SourceType: Normal
+  ContainerType: List
+  OutputPath: Extra
+  Name: Test
+
+Fields:
+- Column: Id
+  Name: id
+  Type: Int
+
+- Column: StringValue
+  Name: string_value
+  Type: String

@@ -1,0 +1,55 @@
+﻿Header:
+  Excel: Extra/Encryption.xlsm
+  Sheet: 暗号化
+  Row: 5
+  BaseType: Normal
+  SourceType: Normal
+  ContainerType: List
+  OutputPath: Extra
+  Name: Encryption
+
+Fields:
+- Column: ByteEncryption
+  Name: byte_encryption
+  Type: Byte
+  Encryption: 164565
+
+- Column: ShortEncryption
+  Name: short_encryption
+  Type: Short
+  Encryption: 697565
+
+- Column: UShortEncryption
+  Name: ushort_encryption
+  Type: UShort
+  Encryption: 697164
+
+- Column: IntEncryption
+  Name: int_encryption
+  Type: Int
+  Encryption: 697164565
+
+- Column: UIntEncryption
+  Name: uint_encryption
+  Type: UInt
+  Encryption: 69164565
+
+- Column: LongEncryption
+  Name: long_encryption
+  Type: Long
+  Encryption: 798774678
+
+- Column: ULongEncryption
+  Name: ulong_encryption
+  Type: ULong
+  Encryption: 7987748
+
+- Column: FloatEncryption
+  Name: float_encryption
+  Type: Float
+  Encryption: 17134823
+
+- Column: DoubleEncryption
+  Name: double_encryption
+  Type: Double
+  Encryption: 8979789

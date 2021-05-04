@@ -1,0 +1,7 @@
+﻿excel[Extra/Test/*.xlsm],sheet[テスト]
+Id,StringValue
+900003,特定のexcelファイルを読みたくない場合は
+900004,-ignore_excelに正規表現のExcelファイル名を指定する
+900005,本番環境のみ削除したテスト用のExcelファイルを指定するとよい
+900001,@が付いた行は-develop時のみ有効
+900002,-developはWiener.exeのオプションで指定

@@ -1,0 +1,16 @@
+# ------------------
+# 複数のyamlで重複データがある場合にエラーにする
+# ------------------
+Header:
+  BaseType: MultiYamlAction
+  MultiYamlAction: 
+    Type: ValidateUnique
+    Ignores:
+    - Value: 0
+
+MultiYamlAction:
+- Column: int_value
+  Yaml: Basic/List.yaml
+
+- Column: int_value
+  Yaml: Basic/Groupby.yaml

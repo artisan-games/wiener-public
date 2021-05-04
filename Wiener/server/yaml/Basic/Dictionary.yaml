@@ -1,0 +1,22 @@
+Header:
+  Excel: Basic/Basic.xlsm
+  Sheet: 辞書
+  Row: 5
+  BaseType: Normal
+  SourceType: Normal
+  ContainerType: Dictionary
+  OutputPath: Basic
+  Name: BasicDictionary
+
+Fields:
+- Column: id
+  Name: id
+  Type: Int
+
+- Column: name
+  Name: name
+  Type: String
+
+- Column: group_id
+  Name: group_id
+  Type: Int

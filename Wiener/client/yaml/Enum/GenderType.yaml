@@ -1,0 +1,24 @@
+Header:
+  Excel: EnumBase.xlsx
+  Sheet: 性別
+  Row: 5
+  BaseType: Normal
+  SourceType: Enum
+  OutputPath: Enum
+  Name: GenderType
+
+Fields:
+- Column: To
+  Name: to
+  Type: Enum
+  Enum: GenderType
+  EnumValue: Value
+  EnumComment: From
+
+- Column: From
+  Name: from
+  Type: String
+
+- Column: Value
+  Name: value
+  Type: Int

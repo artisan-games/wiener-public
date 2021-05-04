@@ -1,0 +1,18 @@
+Header:
+  Excel: Basic/Basic.xlsm
+  Sheet: 辞書リスト
+  Row: 5
+  BaseType: Normal
+  SourceType: Normal
+  ContainerType: GroupBy
+  OutputPath: Basic
+  Name: BasicGroupBy
+
+Fields:
+- Column: Id
+  Name: id
+  Type: Int
+
+- Column: IntValue
+  Name: int_value
+  Type: Int

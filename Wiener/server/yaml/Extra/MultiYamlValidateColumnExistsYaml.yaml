@@ -1,0 +1,18 @@
+# ------------------
+# 複数のyamlに指定したデータが1つもない場合にエラーにする
+#
+# チェックしたyamlのFields.Validate.ColumnExistsYamlにこのyamlを指定する
+# ------------------
+Header:
+  BaseType: MultiYamlAction
+  MultiYamlAction: 
+    Type: ValidateColumnExistsYaml
+    Ignores:
+    - Value: 0
+
+MultiYamlAction:
+- Column: int_value
+  Yaml: Basic/List.yaml
+
+- Column: int_value
+  Yaml: Basic/Groupby.yaml

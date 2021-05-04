@@ -1,0 +1,22 @@
+Header:
+  Excel: Extra/Localize.xlsx
+  Sheet: localize
+  Row: 1
+  BaseType: Normal
+  SourceType: Normal
+  ContainerType: List
+  OutputPath: Extra
+  Name: Localize
+
+Fields:
+- Column: Jpn
+  Name: jpn
+  Type: String
+
+- Column: Eng
+  Name: eng
+  Type: String
+
+- Column: Chi
+  Name: chi
+  Type: String

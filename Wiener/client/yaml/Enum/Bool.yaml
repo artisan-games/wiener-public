@@ -1,0 +1,14 @@
+Header:
+  Excel: EnumBase.xlsx
+  Sheet: 真偽
+  Row: 5
+  BaseType: NoOutput
+
+Fields:
+- Column: To
+  Name: to
+  Type: String
+
+- Column: From
+  Name: from
+  Type: Bool

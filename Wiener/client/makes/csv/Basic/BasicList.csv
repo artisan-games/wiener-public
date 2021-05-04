@@ -1,0 +1,6 @@
+﻿excel[Basic/Basic.xlsm],sheet[リスト]
+Id,IntValue,Detail
+1,200,お米
+2,400,パン
+3,600,小麦粉
+4,-800,ソース

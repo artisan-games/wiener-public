@@ -1,0 +1,13 @@
+﻿excel[Const/Const.xlsx],sheet[Const]
+BoolValue,0
+ByteValue,100
+ShortValue,-100
+UShortValue,65535
+IntValue,-2200
+UIntValue,1356873
+LongValue,-1545546846
+ULongValue,54687645164
+FloatValue,3.141592
+DoubleValue,-51656484.1684968
+StringValue,"今日は
+とても"
